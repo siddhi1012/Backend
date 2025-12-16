@@ -12,9 +12,12 @@
   },
   "author": "Siddhi Gavhane",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/siddhi1012/Backend/issues"
   },
-  "homepage": "https://github.com/siddhi1012/Backend#readme"
+  "homepage": "https://github.com/siddhi1012/Backend#readme",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
 }
