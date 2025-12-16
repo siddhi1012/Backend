@@ -28,9 +28,13 @@ app.get("/home",(req,res) =>{
     });
 });
 
-app.get("/:username",(req,res) =>{
-    console.log(req.params);
-    res.send("Hello this is Apple");
+app.get("/:username/:id",(req,res) =>{
+    let {username,id} = req.params;
+    res.send(`<h1>Welcome to the page of @${username}.</h1>`);
 });
 
+app.get("/search",(req,res) =>{
+    console.log(req.query);
+    res.send("No result found");
+});
 
