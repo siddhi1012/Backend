@@ -1,7 +1,9 @@
-let n = 5;
-for(let i = 0; i<=5; i++){
-    console.log("hello",i);
-}
-console.log("Bye");
+// let n = 5;
+// for(let i = 0; i<=5; i++){
+//     console.log("hello",i);
+// }
+// console.log("Bye");
 
-console.log(process.argv);
+// console.log(process.argv);
+
+
