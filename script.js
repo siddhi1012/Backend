@@ -6,6 +6,10 @@
 
 // console.log(process.argv);
  
-const someValue = require("./math");
+const math = require("./math");
 
-console.log(someValue);
+console.log(math);
+console.log(math.sum(4,5));
+console.log(math.mul(4,5));
+console.log(math.g);
+console.log(math.PI);
