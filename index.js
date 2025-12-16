@@ -1,5 +1,5 @@
 const figlet  = require("figlet");
-figlet("Siddhi", function (err, data) {
+figlet("Siddhi Prasad", function (err, data) {
   if (err) {
     console.log("Something went wrong...");
     console.dir(err);
