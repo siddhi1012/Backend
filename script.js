@@ -5,5 +5,7 @@
 // console.log("Bye");
 
 // console.log(process.argv);
+ 
+const someValue = require("./math");
 
-
+console.log(someValue);
