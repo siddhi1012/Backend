@@ -28,4 +28,9 @@ app.get("/home",(req,res) =>{
     });
 });
 
+app.get("/:username",(req,res) =>{
+    console.log(req.params);
+    res.send("Hello this is Apple");
+});
+
 
