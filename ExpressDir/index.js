@@ -34,7 +34,8 @@ app.get("/:username/:id",(req,res) =>{
 });
 
 app.get("/search",(req,res) =>{
-    console.log(req.query);
-    res.send("No result found");
+    // console.log(req.query);
+    let {q} = req.query;
+    res.send(`<h1>This are search result for query:${q}</h1>`);
 });
 
