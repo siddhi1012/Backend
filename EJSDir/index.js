@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+
 const port = 3000;
 
 app.set("views" , path.join(__dirname , "/views"));
@@ -18,11 +19,18 @@ app.get("/rolldice",(req,res) =>{
     res.render("rolldice.ejs",{diceVals});
 });
 
+// app.get("/ig/:username",(req,res) =>{
+//     let followers = ["adam","steve","bob"];
+//     let { username } = req.params;
+//     console.log(username);
+//     res.render("instagram.ejs",{username , followers});
+
+// });
+
 app.get("/ig/:username",(req,res) =>{
-    let followers = ["adam","steve","bob"];
-    let { username } = req.params;
-    console.log(username);
-    res.render("instagram.ejs",{username , followers});
+    const instaData = require("./data.json");
+    console.log(instaData);
+    res.render("insta.ejs",);
 
 });
 
