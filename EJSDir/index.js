@@ -14,8 +14,15 @@ app.get("/hello",(req,res) =>{
     res.send("Hello World");
 });
 app.get("/rolldice",(req,res) =>{
-    res.render("rolldice.ejs");
+    let diceVals = Math.floor(Math.random() * 6) + 1;
+    res.render("rolldice.ejs",{diceVals});
+});
 
+app.get("/ig/:username",(req,res) =>{
+    let followers = ["adam","steve","bob"];
+    let { username } = req.params;
+    console.log(username);
+    res.render("instagram.ejs",{username , followers});
 
 });
 
