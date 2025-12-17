@@ -28,9 +28,11 @@ app.get("/rolldice",(req,res) =>{
 // });
 
 app.get("/ig/:username",(req,res) =>{
+    let { username } = req.params;
     const instaData = require("./data.json");
-    console.log(instaData);
-    res.render("insta.ejs",);
+    let data = instaData[username];
+    console.log(data);
+    res.render("insta.ejs",{data});
 
 });
 
