@@ -8,3 +8,19 @@ arr1.sayHello = () => {
 arr2.sayHello = () => {
     console.log("hello!,I am arr");
 } 
+
+
+// factory function
+function PersonMaker(name,age){
+    const person = {
+        name : name,
+        age : age ,
+        talk() {
+            console.log(`Hi my name is ${this.name}`);
+        }
+    }
+    return person;
+}
+
+let p1 = PersonMaker("siddhi",22);
+let p2 = PersonMaker("Prasad",23);
